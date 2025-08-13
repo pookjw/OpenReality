@@ -1,0 +1,3 @@
+@MainActor open class Entity {
+    
+}

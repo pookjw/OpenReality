@@ -1,0 +1,147 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.16.14 clang-1700.3.16.4)
+// swift-module-flags: -target arm64-apple-xros26.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -library-level api -enable-experimental-feature Macros -enable-experimental-feature ExtensionMacros -enable-experimental-feature IsolatedAny2 -enable-upcoming-feature InferSendableFromCaptures -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -user-module-version 7.0.83.1.501 -module-name _SwiftUIPrivate -package-name _SwiftUIPrivate
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+@_exported import Swift
+@_exported import SwiftUI
+@_exported import _SwiftUIPrivate
+@_exported import CoreGraphics
+@_exported import MRUIKit
+@_exported import Foundation
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct _ProposedSize3D {
+    public var width: CoreGraphics.CGFloat?
+    public var height: CoreGraphics.CGFloat?
+    public var depth: CoreGraphics.CGFloat?
+
+    public func fixingUnspecifiedDimensions(at: MRUIKit.SPSize3D) -> MRUIKit.SPSize3D
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct _ProposedSize {
+    public var width: CoreGraphics.CGFloat?
+    public var height: CoreGraphics.CGFloat?
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public class PreferenceBridge {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+extension SwiftUI._GraphInputs {
+    public struct Phase {
+        public init()
+        public init(value: Swift.UInt32)
+        // TODO
+    }
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public protocol LeafViewLayout {
+    func sizeThatFits(in: _SwiftUIPrivate._ProposedSize) -> CoreGraphics.CGSize
+    func spacing() -> _SwiftUIPrivate.Spacing
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct Spacing {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct DisplayList {
+    public var version: _SwiftUIPrivate.DisplayList.Version {
+        get
+    }
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+extension _SwiftUIPrivate.DisplayList {
+    public struct Version: Swift.Comparable, Swift.Hashable {
+        public var value: Swift.Int {
+            get
+        }
+
+        public init()
+        public init(decodedValue: Swift.Int)
+        public init(forUpdate: ())
+        public func combine(with: _SwiftUIPrivate.DisplayList.Version)
+    }
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct GraphHost {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct _DisplayList_Identity {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public struct PreferenceValues {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public class ViewResponder {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public class ViewGraph {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+public class ViewGraphHost {
+    // TODO
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+extension _SwiftUIPrivate.ViewGraphHost {
+    public struct Phase: Swift.Equatable {
+        public var base: SwiftUI._GraphInputs.Phase {
+            get
+        }
+        
+        public init(base: SwiftUI._GraphInputs.Phase = SwiftUI._GraphInputs.Phase())
+    }
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+@objc public class ViewGraphHostEnvironmentWrapper: Foundation.NSObject {
+    public var environment: SwiftUI.EnvironmentValues {
+        get
+        set
+    }
+
+    public var phase: _SwiftUIPrivate.ViewGraphHost.Phase {
+        get
+        set
+    }
+}
+
+@available(visionOS 1.0, *)
+@_originallyDefinedIn(module: "SwiftUI", visionOS 1.0)
+@objc public class EnvironmentWrapper: _SwiftUIPrivate.ViewGraphHostEnvironmentWrapper {
+}
